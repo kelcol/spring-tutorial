@@ -1,0 +1,15 @@
+FIELD INJECTION
+java reflection - inject dependencies by setting field values on your class directly (even pvt fields)
+
+1. Config DI with autowiring
+	- applied directly to field
+	- no need for setter methods
+	
+Three kinds of injection: constructor, setter, and field
+	- choose a style and stay consistent!
+	
+
+
+
+
+
