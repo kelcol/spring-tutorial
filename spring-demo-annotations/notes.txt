@@ -14,6 +14,13 @@ Three kinds of injection: constructor, setter, and field
 	- can be used for all injection types to avoid non-unique bean errors
 	
 
+BEAN SCOPES YO
+
+default scope of beans is singleton (cached in mem, shared ref)
+prototype... create new instance everytime (new ref)
+
+Note about destroy cycle and prototype scope: for protype scoped beans, Spring can't call @PreDestroy method (https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-factory-scopes-prototype - has to do with limits of containers knowledge irt bean)
+
 	
 
 

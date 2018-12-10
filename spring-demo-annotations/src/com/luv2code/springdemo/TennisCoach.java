@@ -1,8 +1,10 @@
 package com.luv2code.springdemo;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.stereotype.Component;
 
-//@Component("thatSillyCoach")
 @Component
 public class TennisCoach implements Coach {
 	
@@ -12,7 +14,17 @@ public class TennisCoach implements Coach {
 		System.out.println(">>TT:  inside default constructor");
 	}
 	
-
+	// define my init method
+	@PostConstruct
+	public void doMyStartUpStuff() {
+		System.out.println(">> TennisCoach: doing my startup stuff");
+	}
+	
+	// define my destroy method
+	@PreDestroy
+	public void doMyCleanUpStuff() {
+		System.out.println(">> TennisCoach: doing my cleanup stuff");
+	}
 	
 
 	@Override
