@@ -22,5 +22,11 @@ prototype... create new instance everytime (new ref)
 Note about destroy cycle and prototype scope: for protype scoped beans, Spring can't call @PreDestroy method (https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-factory-scopes-prototype - has to do with limits of containers knowledge irt bean)
 
 	
+SPRING CONFIGURATION WITH JAVA SOURCE CODE
+- create java class and annotate @Configuration
+- add component scanning support @ComponentScan (opt)
+- read spring java config class
+- retrieve bean from spring container
+
 
 
